@@ -4,6 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>3 Column Layout</title>
         <link rel="stylesheet" href="/assets/css/layout.css">
+        <link rel="stylesheet" href="/assets/css/table.css">
      </head>
      <body>
      <header class="header">
@@ -15,7 +16,81 @@
         <main class="center column">
             <article>
                 <h1>Table</h1>
-                <p></p>
+                <p>
+                    <table class="tg">
+                        <thead>
+                          <tr>
+                            <th>Firm</th>
+                            <th>Org</th>
+                            <th>Lab</th>
+                            <th>Sab Lab</th>
+                            <th>Business Plans</th>
+                            <th>Business Components</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td rowspan="11">NMC</td>
+                            <td rowspan="6">CST</td>
+                            <td rowspan="4">CT</td>
+                            <td>ADS</td>
+                            <td>1</td>
+                            <td>10</td>
+                          </tr>
+                          <tr>
+                            <td>BIO</td>
+                            <td>2</td>
+                            <td>15</td>
+                          </tr>
+                          <tr>
+                            <td>CSI</td>
+                            <td>3</td>
+                            <td>6</td>
+                          </tr>
+                          <tr>
+                            <td>ADS</td>
+                            <td>4</td>
+                            <td>10</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2">VCI</td>
+                            <td>BIO</td>
+                            <td>5</td>
+                            <td>15</td>
+                          </tr>
+                          <tr>
+                            <td>BIO</td>
+                            <td>5</td>
+                            <td>15</td>
+                          </tr>
+                          <tr>
+                            <td colspan="3">Sub Total</td>
+                            <td>6</td>
+                            <td>15</td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" rowspan="3">CSI</td>
+                            <td rowspan="2">CI</td>
+                            <td>ADS</td>
+                            <td>7</td>
+                          </tr>
+                          <tr>
+                            <td>8</td>
+                            <td>15</td>
+                          </tr>
+                          <tr>
+                            <td>VCT</td>
+                            <td>10</td>
+                            <td>10</td>
+                          </tr>
+                          <tr>
+                            <td colspan="3">Sub Total</td>
+                            <td>11</td>
+                            <td>15</td>
+                          </tr>
+                        </tbody>
+                        </table>
+                </p>
             </article>
         </main>
         <nav class="left column">
