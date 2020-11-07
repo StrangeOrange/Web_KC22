@@ -43,11 +43,22 @@ function addClick(x, y, dragging)
    clickY.push(y);
    clickDrag.push(dragging);
 }
+function onclickRadio() {
+	var nameRadio = document.getElementsByName('nameRadio');
+	var rezultatRadio;
+	for (var i = 0; i < nameRadio.length; i++) {
+		if (nameRadio[i].type === 'radio' && nameRadio[i].checked) {
+			rezultatRadio = nameRadio[i].value;
+		}
+   }
+   return rezultatRadio;
+}             
+
 
 function redraw(){
    context.clearRect(0, 0, context.canvas.width, context.canvas.height); // Clears the canvas
 
-   context.strokeStyle = "#df4b26";
+   context.strokeStyle = onclickRadio();
    context.lineJoin = "round";
    context.lineWidth = 5;
 
@@ -63,6 +74,6 @@ function redraw(){
        context.stroke();
    }
 }
- document.getElementById('clear').addEventListener('click', function() {
-        context.clearRect(0, 0, canvas.width, canvas.height);
-      }, false);
+document.getElementById('clear').addEventListener('click', function() {
+   context.clearRect(0, 0, canvas.width, canvas.height);
+ }, false);
