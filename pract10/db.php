@@ -2,11 +2,10 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = “users”; //повинна бути створена в субд
+$database = "users"; //повинна бути створена в субд
 
 // Встановлення з'єднання 
-$conn = new mysqli($servername, $username, $password, $database);
-
+$conn = mysqli_connect($servername, $username, $password, $database);
 // Перевірка з'єднання
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);

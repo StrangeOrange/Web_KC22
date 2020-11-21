@@ -69,7 +69,7 @@
     border-color: #51cbee;
     outline: none; /* Remove Chrome outline */
 }
-.form-3 input[type=submit] {
+.form-3 input[type=submit]{
     /* Width and position */
     width: 100%;
     padding: 8px 5px;
@@ -150,4 +150,30 @@
 }
 .no-pointerevents .form-3 p:nth-child(1):before {
     display: none;
+}
+.form-3 a{
+  /* Width and position */
+  width: 96%;
+  padding: 8px 5px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+ 
+  /* Styles */
+  border: 1px solid #0273dd; /* Fallback */
+  border: 1px solid rgba(0,0,0,0.4);
+  box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.3),
+      inset 0 10px 10px rgba(255,255,255,0.1);
+  border-radius: 3px;
+  background: #38a6f0;
+  cursor:pointer;
+ 
+  /* Font styles */
+  font-family: 'Ubuntu', 'Lato', sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.8);  
+
 }
